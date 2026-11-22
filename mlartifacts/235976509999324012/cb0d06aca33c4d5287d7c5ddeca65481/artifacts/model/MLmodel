@@ -1,0 +1,26 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.17.2
+model_size_bytes: 15770153
+model_uuid: a65022a45cde4935a68a669d672f24c6
+run_id: cb0d06aca33c4d5287d7c5ddeca65481
+signature:
+  inputs: '[{"type": "string", "name": "Direction", "required": true}, {"type": "double",
+    "name": "Speed", "required": true}]'
+  outputs: '[{"name": "Power_generation_prediction", "type": "tensor", "tensor-spec":
+    {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2025-01-04 17:24:39.173597'
